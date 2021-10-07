@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100%;
+    background: linear-gradient(to top, #04304c, rgba(32, 23, 104, 0.84));
+
+}
+html{
+    width:100%;
+    height:100%;
+}
+.wrapper {
+    position: relative;
+    min-width: 650px;
+    height: 100%;
+}
+span{
+    color: #FF4500;
+    text-decoration: underline;
+}
+.td1 {
+    margin: 30px;
+    background-image: url(../resource/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 400px;
+    background-origin: padding-box;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+    -webkit-column-rule: 2px solid #c68dee;
+    -moz-column-rule: 2px solid #c68dee;
+    column-rule: 2px solid #c68dee;
+}
+
+.column {
+    background: rgba(87, 59, 163, 0.66);
+    text-align: center;
+}
+
+.p1 {
+    text-shadow:  2px 5px  4px #fadf75;
+    font-size: larger;
+    font-family: "Calibri Light";
+    color: #2a9dd2;
+
+}
+
+.p2 {
+
+    text-shadow: 1px -3px 2px #111111;
+    font-size: 20px;
+    font-family: "Arial Rounded MT Bold";
+    color: rgb(224, 201, 48);
+
+
+
+}
+
+.p3 {
+   xt-shadow: 3px 1px 2px #cc60d5;
+    font-size: medium;
+    font-family: "DejaVu Sans Light";
+    color: #468ddc;
+}
+
+.img1 {
+    position: relative;
+    top: 50px;
+    left: 305px;
+    width: 200px;
+    height: 150px;
+    z-index: -1;
+    opacity: 1;
+
+}
+
+
+.img2 {
+    position: relative;
+    top: 100px;
+    width: 200px;
+    height: 150px;
+    z-index: 0;
+    opacity: 0.8;
+}
+
+.img3 {
+    position: relative;
+    top: 150px;
+    left: -305px;
+    width: 200px;
+    height: 150px;
+    z-index: 2;
+    opacity: 0.5;
+}
+
+.ball {
+    position: absolute;
+    width: 150px;
+    height: 100px;
+    animation: move 3s linear 3 alternate;
+
+}
+
+@keyframes move {
+    0% {
+        left: 10%;
+        bottom: 80%;
+        opacity: 1;
+        transform: rotate(0deg);
+        filter: grayscale(100%);
+
+    }
+    100% {
+        left: 75%;
+        bottom: 10%;
+        opacity: 0.5;
+        transform: rotate(720deg);
+        filter: grayscale(0%);
+    }
+}
